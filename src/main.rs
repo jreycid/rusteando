@@ -39,6 +39,7 @@ fn main() {
 
     modules::_00_modulos::hola_mundo();
     modules::_01_variables::variables();
-    modules::_02_tipos_de_datos::tipos_de_datos();
-    modules::_03_funcions::funcions();
+    modules::_02_tipos_primitivos::tipos_primitivos();
+    modules::_03_tipos_compostos::tipos_compostos();
+    modules::_04_funcions::funcions();
 }
