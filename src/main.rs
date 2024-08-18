@@ -33,38 +33,12 @@
     .gitignore: inclúe por defecto a carpeta /target xa que é donde estarán as compilacións.
 
 */
-
-mod _00_modulos;
-mod _01_tipos_de_datos;
+mod modules;
 
 fn main() {
-    /*
-        En Rust as vbles son, por defecto, inmutables!
 
-            let str = "Mundo";
-            str = "Galcia"; -> casca
-
-        Para poder mutar unha vble hai que usar let mut
-    */
-    let mut str1 = "Mundo";
-
-    println!("\nOla!");
-    println!("Ola, {}!", str1);
-    str1 = "Galicia";
-    println!("Ola, {}!", str1);
-
-    /*
-        Se non queremos declarar unha variable como mutable, tamén e válido
-        declarar unha nova variable co nome nunha xa existente
-        Isto chámase variable shadowing
-    */
-
-    let str2 = "Jose";
-    println!("Ola, {}!", str2);
-    let str2 = str2.to_string() + " Rey";
-    println!("Ola, {}!", str2);
-
-    _00_modulos::hola_mundo();
-
-    _01_tipos_de_datos::tipos_de_datos();
+    modules::_00_modulos::hola_mundo();
+    modules::_01_variables::variables();
+    modules::_02_tipos_de_datos::tipos_de_datos();
+    modules::_03_funcions::funcions();
 }
