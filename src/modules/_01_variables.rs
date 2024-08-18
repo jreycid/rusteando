@@ -24,4 +24,14 @@ pub fn variables() {
     println!("Ola, {}!", str2);
     let str2 = str2.to_string() + " Rey";
     println!("Ola, {}!", str2);
+
+    /*
+        Para o caso das constantes, Rust non infire o tipo,
+        logo é obrigatorio definilo en tempo de compilación
+    */
+
+    // filename: constant.rs
+    const LUCKY_NUMBER: i32 = 7;
+    println!("El número es {LUCKY_NUMBER}");
+
 }
